@@ -4,15 +4,19 @@ open Microsoft.AspNetCore.Hosting
 open Microsoft.Extensions.Hosting
 open Microsoft.Extensions.DependencyInjection
 open Giraffe
+open Giraffe.EndpointRouting
 
-let webApp =
-    choose [
-        route "/ping"   >=> text "pong"
-        route "/"       >=> htmlFile "/pages/index.html" ]
+let endpoints =
+    [
+        route "/ping" (text "pong")
+        route "/" (redirectTo false "/ping")
+    ]
 
-let configureApp (app : IApplicationBuilder) =
-    // Add Giraffe to the ASP.NET Core pipeline
-    app.UseGiraffe webApp
+let configureApp (appBuilder : IApplicationBuilder) =
+    appBuilder
+        .UseRouting()
+        .UseEndpoints _.MapGiraffeEndpoints(endpoints)
+    |> ignore
 
 let configureServices (services : IServiceCollection) =
     // Add Giraffe dependencies
