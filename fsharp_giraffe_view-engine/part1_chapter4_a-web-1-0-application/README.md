@@ -1,0 +1,1 @@
+This implements the HTMX-less web application laid out in the Hypermedia System book's [Part 1: A Web 1.0 Application](https://hypermedia.systems/hypermedia-systems/#_a_web_1_0_application).
