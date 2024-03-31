@@ -1,7 +1,17 @@
+### 1. Web stack
+
+The [Hypermedia Systems](https://hypermedia.systems/) book uses the Python / Flask / Jinja2 stack, whereas this implementation uses:
+
++ [F#](https://fsharp.org/) programming language
++ [Giraffe](https://github.com/giraffe-fsharp/Giraffe) web framework
++ [`Giraffe.ViewEngine`](https://github.com/giraffe-fsharp/Giraffe.ViewEngine) for server-side templating
+
+   > NOTE There is also [`Giraffe.ViewEngine.Htmx`](https://github.com/bit-badger/Giraffe.Htmx), but planning on using vanilla `Giraffe.ViewEngine` in the first readthrough. Hopefully, I'll have time to re-do the whole thing with it; that attempt should reside in [`./fsharp_giraffe_view-engine-htmx`](PLACEHOLDER).
+
+### 2. [How to create and serve a Giraffe project](https://stackoverflow.com/questions/78232524/how-to-start-creating-a-giraffe-web-project-and-how-to-serve-it)
+
 > NOTE TO SELF  
 > **A Giraffe project plugs into the [ASP.NET Core][1] pipeline or is itself an [ASP.NET Core][1] application**, so if the [Giraffe docs][2] has no answer to my questions, then that is probably because it is an [ASP.NET Core][1] topic (or an F# / .NET / etc. one).
-
-### [How to create and serve a Giraffe project](https://stackoverflow.com/questions/78232524/how-to-start-creating-a-giraffe-web-project-and-how-to-serve-it)
 
 Steps 0. to 5. follow the [Get started with F# with command-line tools (.NET | Microsoft Learn)](https://learn.microsoft.com/en-us/dotnet/fsharp/get-started/get-started-command-line) article.
 
