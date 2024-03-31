@@ -1,5 +1,5 @@
 > NOTE TO SELF  
-> **A Giraffe project plugs into the [ASP.NET Core][1] pipeline or is itself an [ASP.NET Core][1] applicatio*n*, so if the [Giraffe docs][2] has no answer to my questions, then that is probably because it is an [ASP.NET Core][1] topic (or an F# / .NET / etc. one).
+> **A Giraffe project plugs into the [ASP.NET Core][1] pipeline or is itself an [ASP.NET Core][1] application**, so if the [Giraffe docs][2] has no answer to my questions, then that is probably because it is an [ASP.NET Core][1] topic (or an F# / .NET / etc. one).
 
 ### [How to create and serve a Giraffe project](https://stackoverflow.com/questions/78232524/how-to-start-creating-a-giraffe-web-project-and-how-to-serve-it)
 
